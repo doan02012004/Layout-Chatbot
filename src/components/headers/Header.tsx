@@ -32,6 +32,14 @@ const Header = () => {
           <span>Settings</span>
         </button>
       </div>
+      <div className="flex-shrink-0" onClick={() => navigate('/signin')}>
+        <button
+          type="button"
+          className="inline-flex items-center gap-x-1.5 rounded-md bg-indigo-600 px-2.5 py-1.5 text-xs sm:text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+        >
+          <span>Login</span>
+        </button>
+      </div>
     </div>
   );
 };

@@ -11,7 +11,8 @@ const SettingsPage = () => {
   const [overlapSize, setOverlapSize] = useState(20);
 
   return (
-    <Row gutter={16} style={{ padding: '24px', backgroundColor: '#f0f2f5' }}>
+   <div className=' h-screen bg-gray-900'>
+       <Row gutter={16} style={{ padding: '24px'}}>
       {/* bảng trái */}
       <Col span={12}>
         <Card title="OpenAI & Pinecone Settings" bordered={false}>
@@ -98,6 +99,7 @@ Bảng bên phải */}
         </Card>
       </Col>
     </Row>
+   </div>
   );
 };
 
