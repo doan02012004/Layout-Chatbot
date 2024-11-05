@@ -19,11 +19,9 @@ const SettingsPage = () => {
       }}
     >
       <Row gutter={16} style={{ height: "100%" }}>
+        {/* Bảng trái với các ô input chia thành 2 hàng */}
         <Col span={12}>
-          <Row
-            gutter={16}
-            style={{ marginBottom: "16px", paddingTop: "100px" }}
-          >
+          <Row gutter={16} style={{ marginBottom: "16px" , paddingTop: "80px"}}>
             <Col span={12}>
               <Input.Password
                 placeholder="OpenAI API Key"
@@ -69,7 +67,7 @@ const SettingsPage = () => {
                 style={{
                   backgroundColor: "#E77474", // Nền màu của nút
                   color: "white", // Màu chữ của nút
-                  width: "80%", // Rút ngắn chiều rộng
+                  width: "70%", // Rút ngắn chiều rộng
                 }}
               >
                 No namespaces found
@@ -84,7 +82,7 @@ const SettingsPage = () => {
                   backgroundColor: "white", // Màu nền của nút
                   borderColor: "#4E8095", // Màu viền của nút
                   color: "#4E8095", // Màu chữ của nút
-                  width: "80%", // Rút ngắn chiều rộng
+                  width: "70%", // Rút ngắn chiều rộng
                 }}
               >
                 Start Chatting
@@ -103,7 +101,6 @@ const SettingsPage = () => {
               flexDirection: "column",
               backgroundColor: "#333", // Nền màu đen xám
               color: "white", // Màu chữ trắng
-              height: "100%", // Đảm bảo chiều cao 100%
             }}
           >
             {/* Thêm đoạn văn bản */}
@@ -120,11 +117,10 @@ const SettingsPage = () => {
                 borderRadius: "8px",
                 border: "2px dashed white",
                 color: "white",
-                padding: "106px", // Tăng padding để ô lớn hơn
+                padding: "126px", // Tăng padding để ô lớn hơn
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                height: "80px", // Tăng chiều cao
               }}
             >
               <p className="ant-upload-drag-icon" style={{ margin: 0 }}>
