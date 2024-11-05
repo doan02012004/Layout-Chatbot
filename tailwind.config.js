@@ -1,8 +1,8 @@
-/** @type {import('tailwindcss').Config} */
-export default {
+// tailwind.config.js
+module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
+    "./public/index.html",
   ],
   theme: {
     extend: {},
@@ -10,4 +10,4 @@ export default {
   plugins: [
     require('@tailwindcss/forms'),
   ],
-}
+};
